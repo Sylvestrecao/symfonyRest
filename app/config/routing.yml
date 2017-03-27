@@ -1,0 +1,31 @@
+app:
+    resource: "@AppBundle/Controller/DefaultController.php"
+    type:     annotation
+
+places:
+    type:     rest
+    resource: AppBundle\Controller\PlaceController
+
+prices:
+    type:     rest
+    resource: AppBundle\Controller\Place\PriceController
+
+users:
+    type:     rest
+    resource: AppBundle\Controller\UserController
+
+themes:
+    type:     rest
+    resource: AppBundle\Controller\Place\ThemeController
+
+preferences:
+    type:     rest
+    resource: AppBundle\Controller\PreferenceController
+
+auth-tokens:
+    type:     rest
+    resource: AppBundle\Controller\AuthTokenController
+
+nelmio-api-doc:
+    resource: "@NelmioApiDocBundle/Resources/config/routing.yml"
+    prefix:  /documentation
